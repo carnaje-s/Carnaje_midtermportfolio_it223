@@ -1,96 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Syntyche</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="stylee.css">
+    </head>
+    <body>
+        
+    <!--navbar-->
+    <nav>
+        <div class="nav-container">
+            <!-- logo sa left -->
+            <div class="logo">
+                <span>Tyche</span>
+            </div>
+
+            <!-- nav links sa right -->
+            <div class="links">
+                <a href="#introduction">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- intro -->
+    <section class="introduction" id="introduction">
+        <div class="content">
+            <div class="profile-img">
+                <br><br>
+                <img src="https://i.pinimg.com/736x/33/f8/66/33f866bdc5be903e61466f3707e0b50c.jpg" alt="Syntyche Carnaje">
+            </div>
+            <br><br>
+            <div class="title"><span>Hi! I am Syntyche</span></div>
+            <br><br>
+            <p>A second-year IT student at the University of Science and Technology of Southern Philippines.</p>
+        </div>
+        <br><br>
+        <div class="social-links">
+            <p><i class="fa-brands fa-github"></i> carnaje-s</p>
+            <br>
+            <p><i class="fa-brands fa-linkedin"></i> carnaje.syn</p>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <!-- abputme -->
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title"><span>About Me</span></div>
+            <br><br>
+            <div class="about-details">
+                <div class="text">
+                    <div class="topic">I am a second-year Information Technology student with experience in web development and programming.
+                        <br><br>
+                        Beyond coding, I am always eager to explore new technologies, enhance my skills, and collaborate on exciting projects. When I’m not in front of my screen, you’ll likely find me exploring creative hobbies, learning something new, or enjoying a good cup of coffee.
+                        <br><br>
+                        Let us build something amazing together!</div>
+                    <br>
+                
+                    <!-- Educational Background Section -->
+                    <div class="education" id="education">
+                        <div class="content">
+                            <div class="title"><span>Educational Background</span></div>
+                            <br><br>
+                            <div class="education-details">
+                                <div class="education-item">
+                                    <h3>CCS</h3>
+                                    <h5>CITY CENTRAL SCHOOL</h5>
+                                    <p>2011 - 2017</p>
+                                </div>
+                                <div class="education-item">
+                                    <h3>MOGCHS</h3>
+                                    <h5>MISAMIS ORIENTAL GENERAL COMPREHENSIVE HIGH SCHOOL</h5>
+                                    <p>2017 - 2021</p>
+                                </div>
+                                <div class="education-item">
+                                    <h3>LDCU</h3>
+                                    <h5>LICEO DE CAGAYAN UNIVERSITY SENIOR HIGH SCHOOL <br> Science, Technology, Engineering, and Mathematics (STEM)</h5>
+                                    <p>2021 - 2023</p>
+                                </div>
+                                <div class="education-item">
+                                    <h3>USTP</h3>
+                                    <h5>UNIVERSITY OF SCIENCE AND TECHNOLOGY OF SOUTHERN PHILIPPINES <br> Bachelor of Science in Information Technology</h5>
+                                    <p>2023 - Present</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-section">
+                        <h3>My Skills</h3>
+                        <br><br>
+                        <div class="boxes">
+                            <div class="box">
+                                <div class="topic">HTML</div>
+                                <div class="per">50%</div>
+                            </div>
+                            <div class="box">
+                                <div class="topic">CSS</div>
+                                <div class="per">35%</div>
+                            </div>
+                            <div class="box">
+                                <div class="topic">PHP</div>
+                                <div class="per">10%</div>
+                            </div>
+                            <div class="box">
+                                <div class="topic">Python</div>
+                                <div class="per">40%</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="projects-section">
+                        <h3>My Projects</h3>
+                        <br><br>
+                        <div class="project-gallery">
+                            <div class="project">
+                                <img src="https://i.pinimg.com/736x/83/28/37/83283756aa119f928e36cc257bcd379f.jpg" alt="Project 1">
+                                <br>
+                                <p> The Group Randomizer GUI is a Python application developed as a <strong>group project</strong> to help users randomly assign names to groups or pick random names from a 
+                                    provided list. This tool is particularly useful for team assignments, classroom activities, or any scenario requiring randomization 
+                                    of names. With a user-friendly graphical interface built using Tkinter, this application simplifies the process of randomizing 
+                                    group assignments or selecting names with minimal effort.</p>
+                                <br>
+                                <p>  Key Features: </p>
+                                <p> - Input names separated by commas into a text box. </p>
+                                <p> - Specify the number of groups for random assignment. </p>
+                                <p> - Pick a random name from the provided list. </p>
+                                <p> - Clear the last entered name or clear all fields. </p>
+                                <p> - Results displayed in an intuitive and visually appealing format.</p>
+                            </div>
+                            <div class="project">
+                                <img src="https://i.pinimg.com/736x/ff/be/3f/ffbe3fa1c7ba8b72facd5438b0726471.jpg" alt="Project 2">
+                                <br>
+                                <p> This redesigned Craigslist is a <strong>group project</strong> that enhances usability and aesthetics while maintaining the 
+                                    platform's simplicity.The new design features a sleek, minimalistic layout with a soft purple theme for a more
+                                    visually appealing experience. </p>
+                                <br>
+                                <p>  New Features: </p>
+                                <p> - Users must log in before accessing the website, ensuring a more personalized and secure experience. </p>
+                                <p> - Categories are placed on the left side of the page for easy access and better organization. </p>
+                                <p> - Enhanced user experience with clear, well-spaced input fields and call-to-action buttons. </p>
+                                <p> - Enhanced Readability. Soft yet contrasting tones and fonts to ensure texts are easy to read.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    
+                    <!-- Tools I Use Section -->
+                    <div class="tools" id="tools">
+                        <div class="content">
+                            <div class="title"><span>Tools I Use</span></div>
+                            <br><br>
+                            <div class="tools-list">
+                                <div class="tool">
+                                    <p><i class="fa-solid fa-laptop"></i> Visual Studio Code</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="fa-brands fa-figma"></i> Figma</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="fa-brands fa-github"></i> GitHub</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="fa-solid fa-database"></i> MySQL</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="fa-brands fa-flipboard"></i> Canva</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+            <br><br>
+            <div class="contact-container">
+                <div class="title"><span>Get In Touch</span></div>
+                <!-- Contact Details -->
+                <div class="text">
+                    <p><i class="fa-solid fa-envelope"></i> Email: carnaje.syntyche@email.com</p>
+                    <p><i class="fa-solid fa-phone"></i> Mobile: +63 912 345 6789</p>
+                    <p><a href="https://www.facebook.com/syntyche.robin.carnaje" target="_blank" style="all: unset; cursor: pointer;">
+                        <i class="fa-brands fa-facebook"></i> Facebook: Syntyche Robin Carnaje</a></p>
+                    <p><a href="https://www.instagram.com/sintichii" target="_blank" style="all: unset; cursor: pointer;">
+                        <i class="fa-brands fa-instagram"></i> Instagram: sintichii</a></p>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Contact Form -->
+            <div class="form">
+                <p><label for="name">Your Name</label></p>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <p><label for="email">Your Email</label></p>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <p><label for="message">Your Message</label></p>
+                <textarea id="message" placeholder="Write your message..."></textarea>
+
+                <button type="submit">Send</button>
+            </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="text">
+            <span>&#169; 2025 Tyche All Rights reserved</span>
+        </div>
+    </footer>
+
+    </body>
 </html>
