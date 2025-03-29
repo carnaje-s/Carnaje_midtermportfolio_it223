@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    overflow-x: hidden;
+    color: black;
+}
+
+/* navvbar Styling */
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #36728a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+/* Center content inside navbar */
+.nav-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo to the right */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px; 
+}
+
+/* Navigation Links */
+.links {
+    display: flex;
+    gap: 30px; 
+}
+
+.links a {
+    font-size: 1.2rem;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.links a:hover {
+    color: #61afce;
+}
+
+/* Intrduction Section */
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 150px 50px 50px;
+}
+
+.introduction .title span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #61afce;
+    text-shadow: 0 0 10px #61afce;
+}
+
+.introduction p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+}
+
+.profile-img img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 5px solid #61afce; 
+    box-shadow: 0 0 10px #61afce; 
+}
+
+.social-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #61afce; 
+    text-decoration: none;
+    gap: 10px;
+    margin: 10px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: white; 
+}
+
+/* icon size */
+.social-links i {
+    font-size: 2rem;
+}
+
+/* AboutMe Section */
+.about {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.about .title span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #61afce;
+}
+
+.about-details {
+    margin-top: 20px;
+}
+
+/* Educational Bg Section */
+.education {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.education .title span {
+    font-size: 1.5rem;
+    color: #61afce; 
+}
+
+.education-details {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.education-item {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0 0 10px #61afce; 
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+    color: white; 
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    font-size: 1.2rem;
+    color: #61afce; 
+    font-weight: bold;
+}
+
+
+.skills-section, .projects-section {
+    margin-top: 40px;
+}
+
+.skills-section h3, .projects-section h3 {
+    font-size: 1.5rem;
+    color: #61afce;
+    margin-bottom: 10px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 0 10px #61afce;
+}
+
+
+/* Container for Projects */
+.projects-container {
+    background: #222; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 15px #61afce; 
+    margin: 50px auto; 
+    max-width: 80%; 
+    text-align: center; 
+}
+
+/* my proj heading */
+.projects-container h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Project Gallery (flexbox for layout) */
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Project Boxes */
+.project {
+    background: #1a1a1a; 
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px #61afce;
+    width: 400px; 
+}
+
+/* Project Images */
+.project img {
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #61afce;
+}
+
+/* Project Text */
+.project p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+
+/* Tools I Use Section */
+.tools {
+    text-align: center;
+    padding: 50px;
+    background: #1a1a1a;
+}
+
+.tools .title span {
+    font-size: 2rem;
+    color: #61afce;
+}
+
+.tools-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0 0 10px #61afce;
+}
+
+.tool i {
+    font-size: 2rem;
+}
+
+/*icon colors */
+.tool .fa-visual-studio-code {
+    color: #007ACC;
+}
+
+.tool .fa-figma {
+    color: #F24E1E;
+}
+
+.tool .fa-github {
+    color: rgb(66, 64, 64);
+}
+
+.tool .fa-laravel {
+    color: #FF2D20;
+}
+
+.tool .fa-database {
+    color: #00758F;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact .title span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #61afce;
+}
+
+.contact .text p {
+    margin: 10px 0;
+}
+
+.contact a {
+    color: #61afce;
+    text-decoration: underline;
+}
+
+.form {
+    width: 100%;
+    max-width: 500px; 
+    margin: 20px auto; 
+}
+
+.form input, 
+.form textarea {
+    width: 100%;
+    max-width: 480px; 
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #61afce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px; /
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+}
+
+/* General section block styling */
+.section-block {
+    width: 100%;
+    padding: 100px 50px;
+    text-align: center;
+    background: #111;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px #61afce;
+}
+
+/* Alternating background colors */
+.about {
+    background: #222;
+}
+
+.contact {
+    background: #1a1a1a;
+}
+
+/* Profile Image */
+.profile-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #61afce;
+}
+
+/* Style Font Awesome Icons */
+.contact .text i {
+    color: #61afce; 
+    margin-right: 10px; 
+    font-size: 1.3rem; 
+    transition: color 0.3s ease-in-out;
+}
+
+/* Change color on hover */
+.contact .text a:hover i {
+    color: white;
+}
+
+/* Form & Inputs */
+.form input, 
+.form textarea {
+    background: white; 
+    color: black;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+.form button {
+    background-color: #61afce;
+    color: white;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background: #36728a;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .text span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.812);
+}
+
+/* all text black except headerss */
+body, 
+.introduction p, 
+.about-details, 
+.education-details, 
+.education-item p, 
+.skills-section, 
+.projects-section, 
+.project p, 
+.tools-list, 
+.tool, 
+.contact .text p {
+    color: black !important;
+}
+
+/* containers chnged intp white */
+.about, 
+.education, 
+.projects-container, 
+.contact, 
+.tools {
+    background: white !important; 
+    box-shadow: 0 0 10px rgba(9, 11, 104, 0.292); 
+}
+
+/* boxes bg changed to lightblue */
+.education-item, 
+.box, 
+.project, 
+.tool {
+    background: #ebf6fc !important; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.186); 
+}
+
+/* h1, h2, h3, .title span */
+h1, h2, h3, .title span {
+    color: #61afce !important; 
+}
